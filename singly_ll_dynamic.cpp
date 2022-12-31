@@ -24,10 +24,10 @@ void print(node* &head) // node pointer passed by referance;
 }
 int main()
 {
-    node *a=new node(1);
-    node *b=new node(2);
-    node *c=new node(3);
-    node *d=new node(4);
+    node* a=new node(1);
+    node* b=new node(2);
+    node* c=new node(3);
+    node* d=new node(4);
 
     a->next=b;
     b->next=c;
@@ -37,4 +37,8 @@ int main()
     
     print(head);
 
+    delete a;
+    delete b;
+    delete c;
+    delete d;
 }
